@@ -4,7 +4,7 @@ import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import TextBlock from './Components/Main_container/TextBlock';
-import venge from './Components/Main_container/bgfolder/venge.mp4';
+import dota2Vid from './Components/../assets/dota2Vid.mp4';
 import HomeContent from './Components/Main_container/Content/HomeContent';
 import styles from './Components/Main_container/Background.module.css';
 
@@ -62,14 +62,14 @@ function App() {
                 height: '100vh',
                 objectFit: 'cover', 
                 zIndex: -1,
-                opacity: 0.5,
+                opacity: 0.4,
               }}
               autoPlay
               loop
               muted
               playsInline
             >
-              <source src={venge} type="video/mp4" />
+              <source src={dota2Vid} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <TextBlock />
