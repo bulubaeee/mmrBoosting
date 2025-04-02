@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(35, 28, 48);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.txtblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.txtUnlock {
+  margin-top: 50px;
+  font-family: 'lora', sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  text-shadow: 3px 3px #ffaf1b;
+  text-align: center;
+}
+
+
+.txtblockPr {
+  column-count: 2;
+  text-align: left;
+  margin-top: 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-family: Arial, Times, serif;
+  color: #ffaf1b;
+  text-shadow: 3px 2px black;
+  max-width: 100%;
+  line-height: 1.375 !important;
+  /* Optional: Ensure that line-height isn't overridden */
+
+}
+
+
+.buluba {
+  color: #ffaf1b;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+}
+
+
+.txtUnlock i {
+  /* font-size: 10rem; */
+  color: orangered;
+  text-shadow: 0 0 20px #0e9fd8, 0 0 20px #18beca, 0 0 30px #13edf575, 0 0 40px #12e4f3;
+}
+
+.txtblockFoot {
+  color: #ffaf1b;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.Credits a {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+#spectre {
+  background-image: url(./bgfolder/spectre.webp);
+  background-position: center;
+}
+
+#spectre1 {
+  background-image: url(./bgfolder/spectre1.webp);
+  background-position: center;
+}
+
+#spectre2 {
+  background-image: url(./bgfolder/spectre2.webp);
+  background-position: center;
+}

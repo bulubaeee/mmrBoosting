@@ -1,0 +1,261 @@
+.SignPannel {
+    box-sizing: border-box;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    position: fixed;
+    top: 25%;
+    left: 52%;
+    width: 380px;
+    height: 400px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px black;
+    animation: fadeIn 1s;
+    transform: translate(-50%, -50%) scale(1);
+ 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes blurred {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(8px);
+    }
+}
+
+
+.close_button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.SignPannel p {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2px;
+    font-weight: 700;
+    text-shadow: 1px 3px 3px white;
+
+}
+
+
+.SignPannel label {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    text-shadow: 1px 3px 3px white;
+
+}
+
+.SignPannel #Sign_email,
+.SignPannel #Sign_pass {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem
+}
+
+.SignPannel #Sign_remember {
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.SignPannel #Sign_in_button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.Sign_up_Pannel #Sign_up_button {
+    position: relative;
+    width: 100%;
+    bottom: -7px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#Sign_in_button:hover,
+#Sign_up_button:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 2px solid black;
+    color: black;
+    font: bold;
+    font-weight: 50px;
+    border-color: black;
+}
+
+.SignPannel #Sign_forgot_pass {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    left: 210px;
+    font-weight: 4;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-shadow: 1px 3px 3px white;
+}
+
+.SignPannel #Sign_forgot_pass:hover {
+    text-decoration: underline;
+}
+
+.SignPannel .Sign_in_widgets {
+    cursor: pointer;
+}
+
+.SignPannel #Sign_in_google:hover,
+.SignPannel #Sign_in_fb:hover,
+.SignPannel #Sign_in_steam:hover {
+    text-shadow:
+        0 0 20px #d0ff00,
+        0 0 20px #eeff00,
+        0 0 30px #fcff47,
+        0 0 40px #f1d782;
+}
+
+
+
+
+/* sign up beyond this point */
+
+
+
+.Sign_up_Pannel {
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 52%;
+    opacity: 1;
+    width: 380px;
+    height: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px black;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    animation: fadeIn 1s;
+    z-index: 3;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+
+
+.Sign_up_Pannel p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Sign_up_Pannel label {
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.Sign_up_Pannel input[type="text"],
+.Sign_up_Pannel input[type="password"],
+.Sign_up_Pannel input[type="email"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.Sign_up_Pannel .close_btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+    .Sign_up_Pannel,
+    .SignPannel {
+        transform: scale(0.8) translateX(-65%) translateY(-65%);
+
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1279px) {
+
+    .Sign_up_Pannel,
+    .SignPannel {
+        transform: scale(0.6) translateX(-80%) translateY(-80%);
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+
+    .Sign_up_Pannel,
+    .SignPannel {
+        transform: scale(0.5) translateX(-100%) translateY(-100%);
+    }
+}
+
+@media (max-width:767px) {
+
+    .Sign_up_Pannel,
+    .SignPannel {
+        transform: scale(0.5) translateX(-100%) translateY(-100%);
+    }
+}

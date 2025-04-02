@@ -1,0 +1,17 @@
+
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blur {
+  filter: blur(6px);
+  transition: filter 1s ease-in-out; /* Smooth blur transition */
+}
+
